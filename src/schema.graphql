@@ -1,0 +1,14 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type MessageSchema {
+  id: Int!
+  FromId: String!
+  ToId: String!
+  text: String!
+}
+
+type Query {
+  MessageById(FromId: String!, ToId: String!): [MessageSchema!]!
+}
